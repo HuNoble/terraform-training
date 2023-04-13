@@ -6,7 +6,7 @@ terraform {
       prefix = "terraform-training-"
     }
   }
-  required_version = "~> 1.2.0"
+  required_version = "~> 1.4.0"
   required_providers {
     google = {
       source  = "hashicorp/google"
