@@ -3,7 +3,7 @@ terraform {
     organization = "poniform"
 
     workspaces {
-      name = "terraform-training-dev"
+      prefix = "terraform-training-"
     }
   }
   required_version = "~> 1.2.0"
