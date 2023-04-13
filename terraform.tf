@@ -1,13 +1,10 @@
 terraform {
-#  cloud {
-#    organization = "poniform"
-#
-#    workspaces {
-#      name = "academo"
-#    }
-#  }
-  backend "gcs" {
-    bucket  = "abels-terraform-state"
+  cloud {
+    organization = "poniform"
+
+    workspaces {
+      name = "academo"
+    }
   }
   required_version = "~> 1.2.0"
   required_providers {
@@ -19,6 +16,6 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("abels-magical-playground.json")
+  credentials = var.GOOGLE_CREDENTIALS
   project = "abels-magical-playground"
 }
