@@ -27,7 +27,7 @@ resource "google_compute_instance" "default-2" {
   zone         = "europe-west4-a"
   project      = "abels-magical-playground"
 
-  tags = ["foo", "bar"]
+  tags = ["foo", "bar", "baz"]
 
   boot_disk {
     initialize_params {
