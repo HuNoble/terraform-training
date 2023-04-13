@@ -22,7 +22,7 @@ resource "google_compute_instance" "default_5" {
 }
 
 resource "google_compute_instance" "default-2" {
-  name         = "test-tf2"
+  name         = "test-tf2-${terraform.workspace}"
   machine_type = "e2-medium"
   zone         = "europe-west4-a"
   project      = "abels-magical-playground"
