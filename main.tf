@@ -19,6 +19,18 @@ resource "google_compute_instance" "default_5" {
       // Ephemeral public IP
     }
   }
+
+  attached_disk {
+    source = google_compute_disk.pd.self_link
+  }
+}
+
+resource "google_compute_disk" "pd" {
+  project = "abels-magical-playground"
+  name    = "${terraform.workspace}-data-disk"
+  type    = "pd-ssd"
+  zone    = "europe-west3-b"
+  size    = 10
 }
 
 resource "google_compute_instance" "default-2" {
