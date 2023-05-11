@@ -17,5 +17,6 @@ terraform {
 
 provider "google" {
   credentials = var.GOOGLE_CREDENTIALS
+  #  credentials = file("abels-magical-playground.json")
   project = "abels-magical-playground"
 }

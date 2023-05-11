@@ -1,5 +1,6 @@
 variable "image_id" {
-  type = string
+  type    = string
+  default = "e2-medium"
 }
 
 variable "GOOGLE_CREDENTIALS" {
