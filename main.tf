@@ -1,4 +1,4 @@
-resource "google_compute_instance" "default_5" {
+resource "google_compute_instance" "default_5" { #comment
   name         = "test-tf-${terraform.workspace}"
   machine_type = var.image_id
   zone         = "europe-west3-b"
