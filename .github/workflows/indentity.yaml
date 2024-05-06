@@ -6,6 +6,9 @@
     build:
       name: "Get Secret"
       runs-on: ubuntu-latest
+      permissions:
+        contents: read
+        id-token: write
       steps:
         - id: 'auth'
           name: 'Authenticate to Google Cloud'
