@@ -17,6 +17,8 @@
           uses: 'google-github-actions/auth@v0.4.0'
           with:
             token_format: 'access_token'
+            create_credentials_file: true
+            activate_credentials_file: true
             workload_identity_provider: 'projects/511751612237/locations/global/workloadIdentityPools/duckpond/providers/duckmaker'
             service_account: 'konnektor@abels-magical-playground.iam.gserviceaccount.com'
 
