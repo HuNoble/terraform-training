@@ -1,11 +1,11 @@
 terraform {
-  cloud {
-    organization = "poniform"
+  #cloud {
+  #  organization = "poniform"
 
-    workspaces {
-      prefix = "terraform-training-"
-    }
-  }
+  #  workspaces {
+  #    prefix = "terraform-training-"
+  #  }
+  #}
   required_version = "~> 1.4.0"
   required_providers {
     google = {
