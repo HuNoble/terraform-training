@@ -1,5 +1,5 @@
 resource "google_compute_instance" "default_5" {
-  name         = "test-tf-${terraform.workspace}"
+  name         = "test-tf-1"
   machine_type = var.image_id
   zone         = "europe-west3-b"
   project      = "abels-magical-playground"
@@ -34,7 +34,7 @@ resource "google_compute_disk" "pd" {
 }
 
 resource "google_compute_instance" "default-2" {
-  name         = "test-tf2-${terraform.workspace}"
+  name         = "test-tf2-2"
   machine_type = "e2-medium"
   zone         = "europe-west4-a"
   project      = "abels-magical-playground"
