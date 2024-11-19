@@ -3,6 +3,6 @@ variable "image_id" {
   default = "e2-medium"
 }
 
-variable "GOOGLE_CREDENTIALS" {
-  type = string
-}
+#variable "GOOGLE_CREDENTIALS" {
+#  type = string
+#}
