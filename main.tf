@@ -35,7 +35,7 @@ resource "google_compute_disk" "pd" {
 
 resource "google_compute_instance" "default-2" {
   name         = "test-tf2-2"
-  machine_type = "e2-medium"
+  machine_type = "e2-standard-4"
   zone         = "europe-west4-a"
   project      = "abels-magical-playground"
 
